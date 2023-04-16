@@ -1,0 +1,12 @@
+openapi: 3.0.0
+info:
+  title: E commerce app
+  description: Full stack ecommerce app using mern stack
+  version: 1.0.0
+  contact:
+    email: rajkavankar@gmail.com
+    url: https://twitter.com/RajKavankar
+
+servers:
+  - url: http://localhost:5000/api/v1
+    description: Testing url for version 1
