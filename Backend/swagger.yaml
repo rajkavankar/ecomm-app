@@ -10,3 +10,42 @@ info:
 servers:
   - url: http://localhost:5000/api/v1
     description: Testing url for version 1
+
+components:
+  schemas:
+    Collection:
+      type: object
+      properties:
+        _id:
+          type: string
+        name:
+          type: string
+      required:
+        - name
+    Users:
+      type: object
+      properties:
+        _id:
+          type: string
+        name:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        role:
+          type: string
+          default: USER
+        isVerified:
+          type: boolean
+          default: false
+        verificationToken:
+          type: string
+        forgotPasswordToken:
+          type: string
+        forgotPasswordExpiry:
+          type: date
+      required:
+        - name
+        - email
+        - password
